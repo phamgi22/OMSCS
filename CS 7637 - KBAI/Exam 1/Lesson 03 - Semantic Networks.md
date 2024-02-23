@@ -44,13 +44,14 @@ What are some characteristics of good representations?
 - Transparent, concise, complete, fast, and computable (allow to draw inferences)
 
 ## Choosing matches by weights
-![Cheese!](../Images/weight.png)
 
-## Connections
+- Prioritize higher similarity score
+![Similarity Weight Scale](../Images/weight.png)
 
-The correspondence problem: given two situations, what object in one situation corresponds to what object in another situation?
+## Semantic network connection to human cognitive
 
-Recall that the emphasis so far as been on the relationships between objects. For cognition in general, the focus is always on relationships.
+- Semantic network is a kind of knowledge representation
+- Semantic network is related to spreading activation network (a popular human theory of human memory): example John want to become rich with a gun, if a common node is met "robbing a bank" then the story is completed
 
 
 
