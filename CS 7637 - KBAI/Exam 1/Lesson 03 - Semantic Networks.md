@@ -45,7 +45,7 @@ What are some characteristics of good representations?
 
 ## Choosing matches by weights
 
-![](Images/weight.png)
+![](CS 7637 - KBAI/Images/weight.png)
 ## Connections
 
 The correspondence problem: given two situations, what object in one situation corresponds to what object in another situation?
