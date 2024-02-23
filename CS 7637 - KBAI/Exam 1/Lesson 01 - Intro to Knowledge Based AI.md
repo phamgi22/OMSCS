@@ -84,7 +84,7 @@ The basic diagram of a cognitive system includes receiving some input from the w
 - percepts: input
 - action: output that carried out by actuators
 
-## Multiple Cognitive Systems System
+## What are the characteristics of a Multiple-Cognitive-Systems System ? 
 - System contains multiple cognitive system
 - System: situate in the physical world
 - System: also situate in the social world where systems interact with each other
@@ -134,8 +134,8 @@ There are several topics we will cover in KBAI:
 - learning by correcting mistakes
 - meta-reasoning
 - ethics in artificial intelligence
-### The Four Schools of AI Quiz
-
+  
+### Answer to The Four Schools of AI Quiz
 _From these options (provided), fill in the blanks with the number of the option_:
 - A: Google maps thinks optimally
 - B: Siri thinks like humans
