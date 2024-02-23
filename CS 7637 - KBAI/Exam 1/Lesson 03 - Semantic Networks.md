@@ -5,14 +5,14 @@ In this lesson we will be covering the following topics:
 - Knowledge representations
 - Semantic networks
 - Problem solving with semantic networks
-- Represent and reason
+- Represent and reason: represent the knowledge, represent the problem and use the knowledge to address the problem
 
 ## Representations
 
 Knowledge of representation has two elements:
 
-1. The language
-2. The content
+1. The language: has a vocabulary
+2. The content: knowledge
 
 E.g., `F = m*a` is an algebraic equation representing Newton's second law.
 
