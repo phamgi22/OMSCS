@@ -63,6 +63,14 @@ There are several principles for KBAI:
 - problems have pattern
 7. The architecture of KBAI agents enables reasoning, learning, and memory to support and constrain each other
 - In KBAI class, we focus on building theories that unify these three components into a cognitive system
+
+## Connection between Raven project and human cognition (The cognitive connection)
+1. Psychometric: science of measuring human intelligence
+2. Computational psychometrics: science of building AI agent that can take the same Raven test as human
+- Computational psychometrics also examine what **error** does AI agent make
+- If error is same as human error, this will provide a ground for hypothesis about human thinking on Raven test
+- On Raven test of intelligence, autistic people perform equally well compared to neurotypical people. Austistic people perform not as well on other intelligence test
+  
 ## Readings
 
 There are several of readings recommended with this course:
