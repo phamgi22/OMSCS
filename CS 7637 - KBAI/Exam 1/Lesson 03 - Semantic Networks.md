@@ -46,7 +46,7 @@ What are some characteristics of good representations?
 ## Choosing matches by weights
 <img width="567" alt="weight" src="https://github.com/phamgi22/OMSCS/assets/91588716/fcc21841-bece-4793-ae72-d11bba2d2e0a">
 
-![here](Images/weight.png?raw=true)
+![here](/Images/weight.png?raw=true)
 
 ## Connections
 
