@@ -40,18 +40,29 @@ We will learn in this class through
 
 **Raven's Progressive Matrices** were written in the 1930s to examine general intelligence. The test consists of 60 strictly **visual** multiple-choice analogy problems. These matrices range from 2x2, 3x3, to even a special 2x1 matrix. 
 
-## Principles Of KBAI
+## Definition of Intelligence
+- We dont have a definition of it, we only study it
+
+## 7 Principles Of Knowledge based AI
 
 There are several principles for KBAI:
-
-1. KBAI agents represent and organize knowledge into knowledge structures to guide and support reasoning.
+1. KBAI agents represent and organize knowledge into knowledge structures to guide and support reasoning
+- Agent use knowledge to guide reasoning
+- Agent represent and organize knowledge into knowledge structures
 2. Learning in KBAI agents is often incremental
-3. Reasoning in KBAI agents is top-down as well as bottom-up
+3. Reasoning in KBAI agents is top-down as well as bottom-up:
+- reasoning is formed through data
+- and pull knowledge out of memory, then use this knowledge to generate expectation to make sense to the world
 4. KBAI agents match methods to tasks
-5. KBAI agents use heuristics to find solutions that are good enough, though not necessarily optimal
+- AI agent can select specific method for specific task
+- AI agent can integrate different methods to address complex tasks
+5. KBAI agents use heuristics to find solutions that are **good enough**, though not necessarily optimal
+- because there has to be balance trade off between efficiency and optimal solutions
+- our focus: use bounded rationality of AI agent and give near real time performance on computationally intractable problem
 6. KBAI agents make use of recurring patterns in the problems they solve
+- problems have pattern
 7. The architecture of KBAI agents enables reasoning, learning, and memory to support and constrain each other
-
+- In KBAI class, we focus on building theories that unify these three components into a cognitive system
 ## Readings
 
 There are several of readings recommended with this course:
@@ -61,13 +72,4 @@ There are several of readings recommended with this course:
 - Rich, E., & Knight, K. (1991). _Artificial intelligence_. McGraw-Hill, New York
 - Russell, S. & Norvig, P. (1995). _Artificial Intelligence: A modern approach_. Prentice-Hall: Englewood Cliffs.
 
-## Section Quizzes
 
-Most quizzes in this lesson are strictly visual-based.
-
-### Final Quiz
-
-_What did you learn in this lesson_?
-
-- There are seven principles for KBAI
-- Raven's progressive matrices examine general intelligence, interestingly enough individuals with autism score just as well as individuals without autism
