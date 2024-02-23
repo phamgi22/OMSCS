@@ -5,31 +5,40 @@ In this lesson we will go over class goals, outcomes, and strategies, projects, 
 ## Class Goals
 
 Goals of this class include learning:
-
-- Core methods of KBAI
-- Tasks addressed by KBAI
+- Core methods of KBAI: schemes for structured knowledge represenation, memory organization, reasoning, learning, cognitive architecture, meta reasoning (reasoning about reasoning)
+- Tasks addressed by KBAI: planning, explaination, diagnosis, and design 
 - How KBAI agents use these methods to address these tasks
-- The relationship between AI and human recognition
+- The relationship between AI and human recognition:
+    - Use theories of human cognition to design human like AI
+    - Use AI technique about testable hypothese about human cognition 
 
-## Class Outcomes
+## Class Learning Outcomes
 
 Class outcomes include:
-
-- Designing and implementing a KBAI agent
-- Using formal strategies and agents to address complex practical problems
-- Using the design and results of KBAI agents to reflect on human cognition
+- Designing and implementing a KBAI agent: related to 1st learning goal 
+- Using formal strategies and agents to address complex practical problems: related to 2nd learning goal 
+- Using the design and results of KBAI agents to reflect on human cognition and vise versa: related to 4th learning goal
 
 ## Class Strategies
 
-We will learn in this class through examples, doing, project-based learning, personalization, and reflection.
+We will learn in this class through 
+- examples,
+- doing
+- project-based learning: mini projects
+- personalization
+- and reflection: end of each lession, journal/report
+- extra: collaborative learning
 
 ## Introduction To Computational Psychometrics
 
-**Psychometrics** is a study of human intelligence, aptitude, and knowledge. **Computational psychometrics** is the design of computer agents that can take the same kinds of tests (intelligence, aptitude, and knowledge) as humans.
+**Psychometrics** is a study of human intelligence, aptitude, and knowledge. 
+**Computational psychometrics** is the design of computer agents that can take the same kinds of tests (intelligence, aptitude, and knowledge) as humans.
+- analyze how well ai do compare to human
+- understand how human intelligence works through designing ai agent
 
 ## Raven's Progressive Matrices
 
-**Raven's Progressive Matrices** were written in the 1930s to examine general intelligence. The test consists of 60 strictly visual multiple-choice analogy problems. These matrices range from 2x2, 3x3, to even a 2x1 matrix.
+**Raven's Progressive Matrices** were written in the 1930s to examine general intelligence. The test consists of 60 strictly **visual** multiple-choice analogy problems. These matrices range from 2x2, 3x3, to even a special 2x1 matrix. 
 
 ## Principles Of KBAI
 
