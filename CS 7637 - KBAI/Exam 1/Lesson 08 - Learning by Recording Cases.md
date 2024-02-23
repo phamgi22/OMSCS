@@ -6,7 +6,10 @@ In this lesson we will look into _learning by recording cases_. This is one of t
 2. Nearest neighbor method
 3. k-Nearest Neighbor
 4. Cases in the real world
-
+   
+## What is special about learning by recording cases?
+- Learning by recording cases is a core process of cognition
+  
 ## Learning By Recording Cases
 
 A **case** is an encapsulation of a past experience. The process for learning by recording cases is as follows:
@@ -15,9 +18,19 @@ A **case** is an encapsulation of a past experience. The process for learning by
 2. Retrieve most similar prior problem `b` from memory
 3. Apply problem `b` solution to problem `a`
 
+Example:
+- debugging similar code issue
+- tying shoe laces
+- doctor making diagnosis
+
 ## Nearest Neighbor In k-Dimensional Space
 
 Sometimes plotting objects on a two dimensional grid does not outright reveal a clear answer. In this case we use the k-Nearest Neighbor method which utilizes all neighbors to find the nearest distance (most similar) between all neighbors.
+- Use euclidian distance to find the nearest distance:
+- existing case: A(xc, yc)
+- list of seen cases: B1 B2 B3 B4
+- a seen case example: B1 (xn, yn)
+- euclidian distance d = square root of {(yc - yn)^2 + (xc - xn)^2}
 
 ## Section Quizzes
 
