@@ -44,7 +44,7 @@ What are some characteristics of good representations?
 - Transparent, concise, complete, fast, and computable (allow to draw inferences)
 
 ## Choosing matches by weights
-![Cheese!](../Images/weight.png?raw=true)
+![Cheese!](../Images/weight.png?raw=true){width=200}
 
 ## Connections
 
