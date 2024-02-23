@@ -14,8 +14,9 @@ Knowledge of representation has two elements:
 1. The language: has a vocabulary
 2. The content: knowledge
 
-E.g., `F = m*a` is an algebraic equation representing Newton's second law.
-
+- E.g., `F = m*a` is an algebraic equation representing Newton's second law.
+- There are many types of knowledge of representation, each with its affordances ans constraints
+  
 ## Introduction To Semantic Networks
 
 There are several steps to constructing a semantic network:
