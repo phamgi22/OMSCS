@@ -44,8 +44,7 @@ What are some characteristics of good representations?
 - Transparent, concise, complete, fast, and computable (allow to draw inferences)
 
 ## Choosing matches by weights
-
-![](CS 7637 - KBAI/Images/weight.png)
+<img width="567" alt="weight" src="https://github.com/phamgi22/OMSCS/assets/91588716/fcc21841-bece-4793-ae72-d11bba2d2e0a">
 ## Connections
 
 The correspondence problem: given two situations, what object in one situation corresponds to what object in another situation?
