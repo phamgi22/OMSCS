@@ -31,23 +31,12 @@ Sometimes plotting objects on a two dimensional grid does not outright reveal a 
 - list of seen cases: B1 B2 B3 B4
 - a seen case example: B1 (xn, yn)
 - euclidian distance d = square root of {(yc - yn)^2 + (xc - xn)^2}
+- return the case with shortest distance d
 
-## Section Quizzes
+What about case which multiple dimension?
+- return the smallest sum of each dimension distance d
+- example: smallest (distance from origin + distance from destination)
 
-### Retrieval By Nearest Neighbor Quiz
-
-_What color is this block (provided)_?
-
-Red, based on the provided diagram.
-
-### Recording Cases In Real Life Quiz
-
-_What route is most similar to this new problem (provided)_? D.
-
-### Final Quiz
-
-_What did you learn in this lesson_?
-
-- Cases are encapsulations of past experiences
-- Our interactions with the world have certain patterns of regularity so we can use solve our current problems with problems we have previously encountered in the past
-- The cognitive architecture includes reasoning, memory and learning; by learning with cases we can utilize the memory aspect of cognition
+## Learning by Recording Cases Connection with Human Cognition
+- Memory is important in Learning by Recording cases
+- Memory supply answer and lessen the burden on reasoning
