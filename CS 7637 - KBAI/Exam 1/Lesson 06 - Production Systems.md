@@ -24,12 +24,12 @@ The lower levels provide an _architecture_ for higher levels and the higher leve
 
 There are several of assumptions for cognitive architectures:
 
-1. Goal-oriented
+1. Goal-oriented: take action to achieve goal
 2. Rich, complex environment
-3. Significant knowledge
-4. Symbols and abstractions
-5. Flexible and function of the environment
-6. Learning
+3. Significant knowledge: use knowledge about the world
+4. Symbols and abstractions: capture knowledge with symbols
+5. Flexible and function of the environment: enviroment change will lead to behavior change
+6. Learning: learn from experience, learn from interact with the world
 
 ## Architecture, Content, and Behavior
 
@@ -39,15 +39,32 @@ In general, it could be said that `architecture + content = behavior`. Suppose t
 
 The **SOAR** architecture is one of the architectures for deliberation (recall the diagram of a cognitive system from the first lesson). SOAR can also cover certain aspects of reaction as well as meta-cognition.
 
-SOAR consists of long-term memory and a working memory, where long-term memory contains different kinds of knowledge:
+SOAR consists of long-term memory and a **working memory**, where long-term memory contains 3 different kinds of knowledge:
 
 1. **Procedural**: has to do with how to do accomplish certain tasks (e.g., how to cook a specific dish?)
-2. **Semantic**: includes generalizations in the form of concepts and models of the world (e.g., how does food get its flavor?)
+2. **Semantic**: includes generalizations in the form of concepts and models of the world (e.g., how does food get its flavor? how does a plane fly)
 3. **Episodic**: includes specific events (e.g., what did you cook last weekend?)
+
+## Baseball example
+- Percepts of the world is put inside the working memory:
+  - goal
+  - score
+  - average
+  - batter name
+- The production rule that decide which action to take to store in procedura knowledge of long term memory
+  
 
 ## Chunking
 
-Referring to our baseball example, what if we have two rules that the SOAR agent cannot decide on? The agent will attempt to draw from the episodic knowledge to decide what rule should be used. This process of drawing from previous knowledge to fulfill a goal or make a decision when two or more decisions are presented is called **chunking**.
+Referring to our baseball example, what if we have two rules that the SOAR agent cannot decide on? 
+- This mean the agent encounters an impasse
+  - because not enough knowledge
+  - or two actions are being selected
+- SOAR will learn rule to break the impasse
+  - SOAR can invoke episodic knowledge to learn a new rule
+- **Chunking** is the process of SOAR learning rule that can break the impasse
+- Chunking is triggered only when impasse occur
+- Impasse tell SOAR what the goal of chunking is
 
 ## Fundamentals Of Learning
 
@@ -58,46 +75,12 @@ The theory of reasoning states helps us address questions such as:
 3. Why do we learn?
 4. How do we learn?
 
-We start with reasoning first then work backwards to learning. This occurred for our production system with the baseball example. When the logic was blocked, the system had to refer to its episodic knowledge into order to fulfill the goal.
+We start with reasoning first then work backwards to learning. 
+This occurred for our production system with the baseball example. 
+When the logic was blocked, the system had to refer to its episodic knowledge into order to fulfill the goal.
 
-## Section Quizzes
+## Production systems connecition with human cognition
+- Production system were proposed to be model of human cognition
+  - Working memory == short term memory in human cognition (capacity 7 +/- 2 items)
+  - When solving algebra problems, SOAR production systems perform similar to human
 
-### Levels Of Architectures Quiz
-
-_What are the layers of Watson_?
-
-1. The physical computer
-2. Searching and decision-making
-3. Answering the inputted clue
-
-### Production System In Action I Quiz
-
-_What operator is selected (provided)_?
-
-Intentional walk based on the goal, _r1_ then _r3_ is activated.
-
-### Production System In Action II Quiz
-
-_What operator is selected (provided)_?
-
-Throw curve-ball based on the goal, _r1_ is skipped then _r2_ is activated which leads to _r5_.
-
-### Production System In Action III Quiz
-
-_What operator is selected (provided)_?
-
-None since the goal is to pitch (_r2_ -> _r4_ -> _r5 or r6_) but the system cannot decide between _r5 or r6_.
-
-### Chunking Quiz
-
-_What operator is selected (provided)_?
-
-Throw curve-ball since _r8_ will dismiss _r6_.
-
-### Final Quiz
-
-_What did you learn in this lesson_?
-
-- Generally, `architecture + content = behavior` and if the architecture is fixed then the behavior will be based on the knowledge content
-- SOAR architecture in this lesson covered deliberation in the cognitive model which depicts agents having working memory and the ability draw three different kinds of knowledge: procedural, semantic, and episodic
-- Production systems were initially purposed as a model for human cognition (e.g., working memory translates to short-term memory for humans) but human cognition are much more complex than architectures like SOAR which mainly captures cognition in a closed-world environment
