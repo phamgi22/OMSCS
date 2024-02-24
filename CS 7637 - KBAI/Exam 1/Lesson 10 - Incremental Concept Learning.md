@@ -12,13 +12,20 @@ How can we abstract concepts out of case-based reasoning? We will examine this p
 
 Incremental concept learning could be thought of as follows, given a new example:
 
-1. Is this an example of the concept?
+1. Is this an example of the concept? (Foo)
    1. If yes, does it fit the current definition of the concept?
       1. If yes, do nothing
-      2. If no, generalize
+      2. If no, **generalize**
    2. If no, does it fit the current definition of the concept?
-      1. If yes, specialize
+      1. If yes, **specialize**
       2. If no, do nothing
+
+Example:
+Prior knowledge: child only seen black cats
+Concept: cat
+Concept definition: black
+Example concept: an orange cat
+   
 
 ## Variabilization
 
@@ -52,42 +59,8 @@ Over time an agent will be able to include all positive examples and exclude all
 
 Models could also include the _close-interval_ heuristic to expand the range of values to be a positive example of the concept
 
-## Section Quizzes
 
-### Identifying A Foo I Quiz
 
-_Is this a foo (provided)_? Yes.
-
-### Identifying A Foo II Quiz
-
-_Is this a foo (provided)_? No.
-
-### Identifying A Foo III Quiz
-
-_Is this a foo (provided)_? Yes.
-
-### Re-identifying A Foo I Quiz
-
-_Variablize this concept on the right (provided)_:
-
-1. Brick
-2. Brick
-3. Brick
-4. Brick
-
-### Re-identifying A Foo II Quiz
-
-_Write the connections for this concept on the right (provided)_:
-
-1. Supports
-2. Supports
-3. Supports
-4. Supports
-
-### Final Quiz
-
-_What did you learn in this lesson_?
-
-- One view of learning is that an agent is given a large number of examples to learn patterns. Another view of learning is where the agent is given one example at a time and the agent has to incrementally learn those examples
-- Because most of us learn one concept at a time, incremental learning is more similar human cognition and learning
-- There are a variety of tools (or heuristics) we can use for concept learning which will enable an agent to incrementally include positive examples and exclude negative ones
+## Connection with human cognition
+- View 1: agent is given a large set of examples to detect pattern of similarity and learn that pattern
+- View 2 (more human): agent gradully incrementally lean concepts out of those examples 
