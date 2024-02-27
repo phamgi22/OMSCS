@@ -162,6 +162,99 @@
   - R squared value: estimate the fraction of the variance of the response that is explained by the model
 - Logistic regression:
   - Pseudo R squared value: **Not** measuring fraction of variance like linear regression
+### Logistic regression for Classification
+- How? By thresholding, basically answer "yes" if probability p is at least some number, otherwise, answer "no"
+- Example: if p >= 0.7 give loan, otherwise no loan
+  
+<img width="600" alt="Screenshot 2024-02-26 at 9 23 28 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/5f0c0776-1da3-402b-9e92-33fbdb317ef1">
+
+About the graph:
+- Use a Receiver operating characteristic curve or **ROC** where we plot sensitivy and 1 - specificity of the model for each threshold
+- The Area Under the Curve is called **AUC**: show the probability that the model estimate a random "yes" point higher than a random "no" point
+- Example:
+  - Joe repaid the loan
+  - Moe did not repay the loan
+  - AUC = probability that the model give's Joe data point higher response value than Moe's
+  - AUC = 0.5 -- meaning we are just guessing
+  - AUC also called **concordance index**
+### Why do we care about ROC and AUC
+- Both ROC and AUC does **NOT** differentiate between the cost of False Negative and False Positive
+- ROC and AUC give a quick estimate of the model quality
+### How to determine which model give the highest value?
+- Confusion matrix output
+  
 ## 6. Confusion Matrices
-###
-###
+### What do we learn in this section?
+- Learn to measure how well a classification type model work
+  - Can apply to classification models such as:
+    - Support vector machine
+    - K nearest neighbor
+    - Logistic regression (Classification)
+### What does confusion matrix show?
+- Show how much the model is confusing the two categories
+  
+<img width="400" alt="Screenshot 2024-02-26 at 9 34 49 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/bf7f9728-d7a3-4370-9284-f98538b064fb">
+- Example: 
+  - True positive + False positive = total number of email in the inbox
+  - Spam email = False positive / (True positive + False positive)
+- **Sensitivity**: fraction of category member that are correctly identified
+- **Specificity**: fraction of non-category member that are correctly identified
+
+## 7. Situtationally-Driven Comparison
+### What do we learn in this section?
+- Learn to how to use measures of a model  quality to evaluate and compare different possibilities and choose the best one
+
+### Example
+- We built a SVM model to classify spam and real email
+- 500 are real
+- 500 are spam
+  
+<img width="400" alt="Screenshot 2024-02-26 at 9 58 03 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/ff61d7aa-b142-4f59-9b47-b356c19e068b">
+
+- How to use this information to evaluate the svm model?
+  - We need **cost of lost productivity**
+  - Assume cost of lost productivity for the current classifying email case:
+    - $0 for correct classification
+    - $0.04 to read spam email
+    - $1 to miss a real email
+    - if 50% of email is spam: total cost = 490x0 + 10x1 + 100x0.04 + 400x0 = $14
+      - overall cost per incoming email = 1.4cents/email
+    - if 40% of email is spam: total cost = 490x(60/50)x0 + 10x(60/50)x1 + 100x(40/50)/0.04 + 400x(40/50)x0 = $15.2
+      - overall cost per incoming email = 1.52cent/email
+  - Lower overall cost per data point is better
+
+### Advanced Topics in Regression
+## What do we learn in this section?
+- Advanced methods related to regression
+  - Parametric methods: linear regression
+  - non parametric methods: knn, spline regression
+## Poisson regression
+- Response of poisson regression model follow a Poisson distribution
+  <img width="306" alt="Screenshot 2024-02-26 at 10 14 54 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/9659490a-472a-49c3-9f72-49840dab5cdd">
+- Example: count arrivals at an airport security line
+  - arrival is a function of time: $\lambda(x)$
+- Parameter is a function of other attributes 
+## Regression splines
+- Function of polynomials that connect to each other
+  - Connection point is knot
+- Fit different functions to diffreent parts of the dataset
+  - Smooth connections between knots
+- Order k regression spline: the polynomial are all order k
+- An implementation of regression splines is called Multi adaptive regression slines (MARS)
+  - MARS is traded mark so MARS is called Earth in many statistical libaries
+
+## Most advance: Bayesian regression
+- Start with
+  - Data
+  - Estimate of how we think regression coefficients and the random error is distributed
+-  Example: predict how tall a child will be as an adult, based on
+  - Data: height of the child mother and father
+  - Estimate coefficient from health expert suggest between 0.8 and 1.2
+- Then use Bayes' theorem to update estimate based on the data we have
+- most helpful when we dont have **not much data**
+## Simple: KNN regression
+- just plot all the data we have
+- for new data that need to be predicted:
+  - find the k closest data points to the new points
+  - new data prediction = average the k data points response
+- extra that we can do: weighting each dimension, remove dimension that not predictive
