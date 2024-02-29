@@ -57,12 +57,12 @@ Over time an agent will be able to include all positive examples and exclude all
 
 ## Heuristics For Concept Learning
 
-Require-link: link must be present to be a postive example of the concept (Specialization to require features)
-Forbid-link: link must be absetnt to be a postive example of the concept (Specialization to exclude features)
-Drop-link: link is not necessary to be a positive example of the concept (Generalization to ignore features)
-Enlarge-set: multiple objects or links may fit one role in the concept (generalization to abstract features)
-Climb-tree: generalization over multiple objects in the same role based on knowledge (generalization with background knowledge)
-Close-interval: expalnd range of values to be a positive of example of the concepts (Generalization) (example a dog is still a dog with larger size)
+- Require-link: link must be present to be a postive example of the concept (Specialization to require features)
+- Forbid-link: link must be absetnt to be a postive example of the concept (Specialization to exclude features)
+- Drop-link: link is not necessary to be a positive example of the concept (Generalization to ignore features)
+- Enlarge-set: multiple objects or links may fit one role in the concept (generalization to abstract features)
+- Climb-tree: generalization over multiple objects in the same role based on knowledge (generalization with background knowledge)
+- Close-interval: expalnd range of values to be a positive of example of the concepts (Generalization) (example a dog is still a dog with larger size)
 
 
 
