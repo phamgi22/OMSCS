@@ -71,7 +71,63 @@
   - **NOT A VARIABLE SELECTION METHOD**
 
 ## Lasso Regression vs Ridge Regression
+### Why Lasso regression does variable selection but Ridge regression does not?
+<img width="400" alt="Screenshot 2024-03-04 at 4 59 24 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/1512ca5d-88ee-4ad0-98d5-e1ca897b9752">
 
-
-
+- Lasso regression:
+  - |a1| + |a2| <= T
+  - lasso regression solution must be inside the shaded diamond area
+  - now we need to choose a solution that minimizes the sum of errors squared
+  - possible error value can be graphed as an eclipse
+  - as the total of error get larger, the error graph touches the shaded diamond
+    - touch at corner --> one variable has been eliminated
+    - if not touch corner --> more variables and smaller T value can cause eclipse to touch at corner --> more variable eliminated
+- Ridge regression:
+  - a1^2 + a2^2 <= T
+  - ridge regression solution must be inside the shaded circle area
+  - now we need to choose a solution that minimizes the sum of errors squared
+  - possible error value can be graphed as an eclipse
+  - two quadratic functions are very hard to touch at corner --> **cannotremove variables**
+    
 ## The "bias-variance" tradeoff
+- All patterns: real and random
+- We can only fit more to all patterns or less to all patterns
+  - capture both real and random
+  - capture too little: underfit
+  - capture too much: overfit
+- A less fit model:  
+  - use less variables
+  - coefficients of variables are smaller
+  - relationship between predictors and response is reduced (because prediction is closer to a0)
+  - remove variable or minimize coefficients
+    - create high **bias** in the model: make the model miss or minimize real effects (underfit)
+    - **variance** also reduced: prediction closer to a0
+- A more fit model:
+  - use more variables
+  - coefficients are larger
+  - more differentiation between predictions due to large coefficients and amount of variables: high **variance**
+  - more real effects are captured: low **bias**
+  - more random effects also capture: overfit
+    
+- Validation help to pick model that find model that have high fit to real patterns
+<img width="600" alt="Screenshot 2024-03-04 at 5 41 42 PM" src="https://github.com/phamgi22/OMSCS/assets/91588716/7a161905-a18a-4f11-90b9-d0ad41fed8b4">
+
+
+- Experts can also help
+## Ridge regression
+- does not reduce the number of variables
+- restricts regression coefficient magnitude
+- if regression solution is outside of circle --> coefficients will be forced to be smaller according to T constraint
+- if regression solution is inside of the circle --> coefficients wont be changed at all, unless T constraint get smaller than sum of coefficients squared (a1^2 + a2^2)
+- decrease coefficient magnitude --> reduce **variance** in the model --> differences between model response decrease --> create more **bias**: capture less real effect --> but also capture less random effects --> reduce model fit
+- this is a regularization approach that reduce the effect of variables on the model
+- if T is too small then the model will be underfit
+
+
+## Choosing a variable selectio model
+- 
+
+## Questions
+1. Are forward selection, backward elimination and stepwise regression all greedy algorithm?   
+
+
